@@ -7,18 +7,23 @@ public class Salario_aumentado {
     static void main() {
 
         Scanner teclado = new Scanner(System.in);
+        final double JORNADALABORAL = 40;
+
         System.out.println("¿Cuántas horas trabajas al mes?");
-        float horas = teclado.nextFloat();
+        double horas = teclado.nextDouble();
 
         Scanner martin = new Scanner(System.in);
         System.out.println("¿Cuánto cobras por hora?");
-        float dinero = martin.nextFloat();
+        double dinero = martin.nextDouble();
 
-        if (horas <= 40){
-            System.out.println("Salario= " + horas*dinero);
+        if (horas <= JORNADALABORAL){
+            double salario = horas*dinero;
+            System.out.println("Salario= " + salario);
         }else{
-            float horasextra = horas-40;
-            System.out.println("Salario= " + horas*dinero + );
+            double horasextra = horas - JORNADALABORAL;
+            double sueldo_extra = horasextra*dinero*1.5;
+            double salario = dinero*JORNADALABORAL + sueldo_extra;
+            System.out.println("Salario con horas extra= " + salario);
         }
     }
 }
