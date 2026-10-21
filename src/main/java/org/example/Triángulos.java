@@ -16,7 +16,7 @@ public class Triángulos {
         double z = teclado.nextDouble();
         if ((x == y) && (x == z)){
             System.out.println("Es equilátero");
-        } else if ((x != z) && (x == y)) || ( && (y != z) && (x == z)){
+        } else if (((x != z) && (x == y)) || ((x != y) && (y == z)) || ((y != z) && (x == z))){
             System.out.println("Es isósceles");
         } else{
             System.out.println("Es escaleno");
