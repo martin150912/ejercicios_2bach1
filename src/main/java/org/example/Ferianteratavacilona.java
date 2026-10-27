@@ -21,9 +21,11 @@ public class Ferianteratavacilona {
         System.out.println("Indica tu peso (kg), es necesario para la atracción");
         float peso = teclado.nextFloat();
 
-        if (peso < pesomínimo || peso > 120){
-            System.out.println("Lo siento, no puedes subir, te faltan: " + (140 - pesomínimo));
-        }else{
+        if (peso < pesomínimo){
+            System.out.println("Lo siento, no puedes subir, te faltan: " + (120 - pesomínimo) + "kg");
+        } else if (peso > 120) {
+            System.out.println("Lo siento, no puedes subir, te sobran: " + (peso - 120) + "kg");
+        } else{
             System.out.println("SUBE A LA ATRACCIÓN");
         }
 
