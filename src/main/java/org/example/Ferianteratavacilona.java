@@ -28,10 +28,6 @@ public class Ferianteratavacilona {
         } else{
             System.out.println("SUBE A LA ATRACCIÓN");
         }
-
-
-
-
     }
 }
 
