@@ -34,7 +34,7 @@ public class Multiplicaciones_3cifras {
             System.out.println("--------");
             System.out.println(multiplicacion);
         }else {
-            System.out.println("ERROR, el número no tiene tres cifras");
+            System.out.println("ERROR, el número tiene que tener tres cifras positivas");
         }
     }
 }
