@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.Scanner;
 
-public class variableN {
+public class VariableN {
 
     static void main() {
 
