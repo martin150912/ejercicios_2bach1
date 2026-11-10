@@ -12,7 +12,7 @@ public class Juego_2jugadores {
         String frase = teclado.nextLine().toUpperCase();
 
         System.out.println("Jugador 2, empiezas!");
-        int vidas = 5;
+        int vidas = 10;
 
         do {
             System.out.println("Introduce una palabra a buscar...");
